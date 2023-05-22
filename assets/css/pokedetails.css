@@ -1,0 +1,1125 @@
+/*ESTILIZAÇÃO DETALHES DO POKEMON "DIALOG" */
+
+
+
+.modal {
+
+    display: none;
+    flex-direction: column;
+    border:none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+    width: 80%;
+    padding: 0;
+    margin-top: 0px;
+    left: 32.5px;
+    position: absolute;
+    z-index: 1000;
+}  
+
+.cardcor {
+
+    display: flex;
+    flex-direction: column;
+    border:none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+}
+
+.cardHeader {
+    
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 10px;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+
+.cardHeader button{
+
+    display:flex;
+    margin-left: auto;
+    
+    border:none;
+    border-radius: 1rem;
+    background-color: rgba(187, 0, 0, 0.753);
+    color:#fff
+}
+
+
+.modalBody{
+
+    display:flex;
+    flex-direction: column;
+}
+
+
+.cardBody .imgPokebola {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+
+    background-image: url('../../logoOpaco2.png');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125px 125px;
+
+
+}
+
+.cardBody .imgPokebola .imgpoke{
+    
+    display: flex;
+    max-width: 100%;
+    height: 100px ;
+    padding: 0px;
+    border-style: none;
+    align-items: center;
+   
+}
+    
+.cardDetalhes {
+
+    display: flex;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+    flex-direction: column;
+    
+    background-color: #fdfdfd;
+    margin:0;
+    margin-top:13rem;
+    margin-left: 3.5%;
+    margin-right: 3%;
+    padding: 0;
+    height: 70%;
+    width: 93%;
+    border-color: #0000009d;
+    border-radius: 5px;
+    align-items: center;
+    text-transform: capitalize;
+    z-index: 2000;
+
+    
+    position: absolute;
+    background-image: url('../../logoOpaco3.png');
+        
+    background-position: 100px -50px;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    color:black;
+}
+
+
+
+
+
+.cardDetalhes .modalDetalhesHeader h3{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 0;
+    margin:0;
+    margin-top: 5px;
+    color: black;
+    
+    
+
+}
+
+.cardDetalhes .modalBodyDetalhe {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ; 
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .800rem;
+
+}
+
+.cardDetalhes .modalBodyDetalhe .colunLeaft {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-top: 0;
+    align-items: center;
+
+
+}
+
+.cardDetalhes .modalBodyDetalhe .colunLeaft h4{
+
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+
+
+.cardDetalhes .modalBodyDetalhe .colunMid {
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-top: 0;
+    align-items: center;
+
+}
+
+.cardDetalhes .modalBodyDetalhe .colunMid .tituloPeso{
+
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+.cardDetalhes .modalBodyDetalhe .colunMid .peso{
+    
+    background-color: gray;
+    color: #fff;
+    padding: .25rem .5rem;
+    margin-top: 4px;
+    font-size: .800rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+
+.cardDetalhes .modalBodyDetalhe .colunMid .tituloAltura{
+
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+.cardDetalhes .modalBodyDetalhe .colunMid .altura{
+    background-color: gray;
+    color: #fff;
+    padding: .25rem .5rem;
+    margin-top: 4px;
+    font-size: .800rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.cardDetalhes .modalBodyDetalhe .colunDir {
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 0;
+    align-items: center;
+
+}
+
+.cardDetalhes .modalBodyDetalhe .colunDir .tituloHabilidades{
+    margin: 10px;
+    margin-bottom: 2px;
+}
+
+.cardDetalhes .modalBodyDetalhe .colunDir ol{
+
+list-style: none;
+align-items: center;
+padding: 0;
+
+}
+
+.cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+
+    color: #f5f4f4;
+    padding: 10%;
+    margin: .25rem 0;
+    border: none ;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+
+}
+
+
+/*Esse media vai deixa a tela com 2 colunas caso ela for 480 px "pequena"*/
+@media screen and (min-width: 480px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 80%;
+        padding: 0;
+        margin-top: 0px;
+        left: 50px;
+        position: absolute;
+        z-index: 1000;
+    }  
+    
+   
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 70%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 215px -50px;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        color:black;
+    }
+    
+    
+    
+   
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+
+
+}
+
+/*Esse media vai deixa a tela com 2 colunas caso ela for 640px "mediana"*/
+@media screen and (min-width: 640px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 80%;
+        padding: 0;
+        margin-top: 0px;
+        left: 68px;
+        position: absolute;
+        z-index: 1000;
+    }  
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 70%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 350px -50px;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        color:black;
+    }
+    
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+}
+
+/*Esse media vai deixa a tela com 3 colunas caso ela for 960px "Mediana"*/
+@media screen and (min-width: 960px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 50%;
+        height: 50%;
+        padding: 0;
+        margin-top: 0px;
+        left: 240px;
+        position: absolute;
+        z-index: 1000;
+    }  
+
+    .cardcor {
+
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+    }
+    
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 60%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 280px -50px;
+        background-repeat: no-repeat;
+        background-size: 180px 180px;
+        color:black;
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunMid {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0;
+        align-items: center;
+    
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+
+}
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 992px "Grande"*/
+@media screen and (min-width: 992px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 50%;
+        height: 60%;
+        padding: 0;
+        margin-top: 0px;
+        left: 249px;
+        position: absolute;
+        z-index: 1000;
+    }  
+
+    .cardcor {
+
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+    }
+    
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 60%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 550px -40px;
+        background-repeat: no-repeat;
+        background-size: 180px 180px;
+        color:black;
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunMid {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0;
+        align-items: center;
+    
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+
+}
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 1024px "Grande"*/
+@media screen and (min-width: 1024px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 50%;
+        height: 60%;
+        padding: 0;
+        margin-top: 0px;
+        left: 255px;
+        position: absolute;
+        z-index: 1000;
+    }  
+
+    .cardcor {
+
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+    }
+    
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 60%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 315px -40px;
+        background-repeat: no-repeat;
+        background-size: 180px 180px;
+        color:black;
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunMid {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0;
+        align-items: center;
+    
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+
+}
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 1366px "Grande"*/
+@media screen and (min-width: 1366px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 40%;
+        height: 60%;
+        padding: 0;
+        margin-top: 0px;
+        left: 410px;
+        position: absolute;
+        z-index: 1000;
+    }  
+
+    .cardcor {
+
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+    }
+    
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 60%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 345px -40px;
+        background-repeat: no-repeat;
+        background-size: 180px 180px;
+        color:black;
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunMid {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0;
+        align-items: center;
+    
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+
+}
+
+/*MINHA TELA*/
+@media screen and (min-width: 1400px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 25%;
+        height: 30%;
+        padding: 0;
+        margin-top: 0px;
+        left: 705px;
+        position: absolute;
+        z-index: 1000;
+    }  
+
+    .cardcor {
+
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+    }
+    
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 55%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 275px -55px;
+        background-repeat: no-repeat;
+        background-size: 180px 180px;
+        color:black;
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunMid {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0;
+        align-items: center;
+    
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+
+}
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 1920px "Grande"*/
+@media screen and (min-width: 1920px) {
+    .modal {
+
+        display: none;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+        width: 25%;
+        height: 60%;
+        padding: 0;
+        margin-top: 0px;
+        left: 720px;
+        position: absolute;
+        z-index: 1000;
+    }  
+
+    .cardcor {
+
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        border:none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.712);
+    }
+    
+    
+    .cardBody .imgPokebola {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+    
+        background-image: url('../../logoOpaco2.png');
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    
+    
+    }
+    
+    .cardBody .imgPokebola .imgpoke{
+        
+        display: flex;
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        align-items: center;
+       
+    }
+        
+    .cardDetalhes {
+    
+        display: flex;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.822);
+        flex-direction: column;
+        
+        background-color: #fdfdfd;
+        margin:0;
+        margin-top:13rem;
+        margin-left: 3.5%;
+        margin-right: 3%;
+        padding: 0;
+        height: 50%;
+        width: 93%;
+        border-color: #0000009d;
+        border-radius: 5px;
+        align-items: center;
+        text-transform: capitalize;
+        z-index: 2000;
+    
+        
+        position: absolute;
+        background-image: url('../../logoOpaco3.png');
+            
+        background-position: 285px -50px;
+        background-repeat: no-repeat;
+        background-size: 180px 180px;
+        color:black;
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunMid {
+
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0;
+        align-items: center;
+    
+    }
+    
+    .cardDetalhes .modalBodyDetalhe .colunDir .habilidade {
+    
+        color: #f5f4f4;
+        padding: 10%;
+        padding-right: 15px;
+        margin: .25rem 0;
+        border: none ;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: center;
+    
+    }
+    
+
+
+}
+
+
+
+
+
+

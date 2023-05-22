@@ -1,0 +1,596 @@
+/*Bom habitos programa paras telas pequenas depois vai aumentando com os @media*/
+
+
+.pokemons {
+    /*Comando display: grid faz a base em grade*/
+    justify-self: center;
+    list-style: none;
+    display: grid;
+    /*grid template columns mostra como ficaram as colunas no caso "1fr" para cada vai ficar 50%*/
+    grid-template-columns: 1fr;
+    margin:0;
+    padding: 0;
+     
+} 
+/*usar a unidade px pixel quando nao quer que altere pois ele e emais fixo*/
+ 
+
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+
+
+
+.pokemon {
+
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem; 
+    
+    color: rgb(255, 255, 255);
+    height: 10rem;
+
+    /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho*/
+    background-image: url('../../logoOpaco2.png');
+    background-position: 140px 32px;
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    
+    
+
+       
+}
+
+
+.pokemon .linhaTopCardPokemon{
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.pokemon .linhaTopCardPokemon button{
+
+    background-color: #ffffff86;
+    border: none;
+    color: #ffffff;
+    width: 25px;
+    border-radius: 20px;
+    margin: 5px;
+
+
+}
+ 
+
+
+
+
+
+
+
+
+.pokemon .number {
+    color: #000;
+    opacity: .3;
+    text-align: left;
+    font-size: .825rem;
+    padding:4px;
+
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0;
+
+}
+
+
+
+.pokemon .types {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+        
+}
+
+.pokemon .types .type {
+
+    
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .800rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: left;
+
+
+}
+
+
+
+
+.cardBody {
+    
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.bg-img  {
+
+    display: flex;
+    background-image: url(); 
+    background-repeat: round;
+    
+}
+
+
+.bg-img img {
+
+    max-width: 60%;
+    height: 100px ;
+    padding: 0px;
+    border-style: none;
+    margin-top: 8px;
+    margin-left: 90px;
+    margin-bottom: 0px;
+
+}
+
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3px;
+    
+}
+
+.pagination button{
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .800rem;
+    color: #fff;
+    background-color: #6e5896;
+    border: none;
+    border-radius: 1rem;
+
+
+       
+}
+
+
+/*__________________________________________________*/
+
+
+
+
+
+
+
+    
+
+
+
+
+
+/*Esse media vai deixa a tela com 2 colunas caso ela for 480 px "pequena"*/
+@media screen and (min-width: 480px) {
+    .pokemons {
+
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+    
+    }
+
+    .pokemon {
+
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem; 
+       
+        color: rgb(255, 255, 255);
+        height: 10rem;
+    
+        /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho*/
+        background-image: url('../../logoOpaco2.png');
+        background-position: 90px 40px;
+        background-repeat: no-repeat;
+        background-size: 112px 112px;
+        
+        
+    
+           
+    }
+
+    .bg-img img {
+
+        max-width: 70%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        margin-top: 10px;
+        margin-left: 45px;
+        margin-bottom: 00px;
+    
+    }
+}
+
+/*Esse media vai deixa a tela com 2 colunas caso ela for 640px "mediana"*/
+@media screen and (min-width: 640px) {
+    .pokemons {
+
+        grid-template-columns: 1fr 1fr;
+        
+    
+    }
+
+    .pokemon {
+
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem; 
+        
+        color: rgb(255, 255, 255);
+        height: 10rem;
+    
+        /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho*/
+        background-image: url('../../logoOpaco2.png');
+        background-position: 160px 35px;
+        background-repeat: no-repeat;
+        background-size: 120px 120px;
+        
+        
+    
+           
+    }
+
+    .bg-img img {
+
+        max-width: 90%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        margin-top: 14px;
+        margin-left: 30px;
+       
+    
+    }
+
+    
+.pokemon .types .type {
+
+    
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 15px;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: left;
+
+
+}
+
+
+
+    
+}
+
+/*Esse media vai deixa a tela com 3 colunas caso ela for 960px "Mediana"*/
+@media screen and (min-width: 960px) {
+    .pokemons {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        
+    
+    }
+
+    .pokemon {
+
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem; 
+        
+        color: rgb(255, 255, 255);
+        height: 10rem;
+    
+        /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho*/
+        background-image: url('../../logoOpaco2.png');
+        background-position: 165px 34px;
+        background-repeat: no-repeat;
+        background-size: 120px 120px;
+        
+        
+    
+           
+    }
+
+    .bg-img img {
+
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        margin-top: 12px;
+        margin-left: 35px;
+        margin-bottom: 0px;
+    
+    }
+
+    .pokemon .types .type {
+
+    
+        color: #fff;
+        padding: .25rem .5rem;
+        margin: .25rem 0;
+        font-size: 15px;
+        border-radius: 1rem;
+        filter: brightness(1.1);
+        text-align: left;
+    
+    
+    }
+}
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 992px "Grande"*/
+@media screen and (min-width: 992px) {
+    .pokemons {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    .pokemon {
+
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem; 
+        
+        color: rgb(255, 255, 255);
+        height: 10rem;
+    
+        /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho */
+        background-image: url('../../logoOpaco2.png');
+        background-position: 103px 43px;
+        background-repeat: no-repeat;
+        background-size: 110px 110px;
+        
+        
+    
+           
+    }
+
+    .bg-img img {
+
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        margin-top: 9px;
+        margin-left: 45px;
+        margin-bottom: 0px;
+    
+    }
+}
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 1024px "Grande"*/
+@media screen and (min-width: 1024px) {
+    .pokemons {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    .pokemon {
+
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem; 
+        
+        color: rgb(255, 255, 255);
+        height: 10rem;
+    
+        /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho */
+        background-image: url('../../logoOpaco2.png');
+        background-position: 103px 43px;
+        background-repeat: no-repeat;
+        background-size: 110px 110px;
+        
+        
+           
+    }
+
+
+    .bg-img img {
+
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        margin-top: 9px;
+        margin-left: 45px;
+        margin-bottom: 0px;
+    
+    }
+}
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 1366px "Grande"*/
+@media screen and (min-width: 1366px) {
+    .pokemons {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    .pokemon {
+
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem; 
+        
+        color: rgb(255, 255, 255);
+        height: 10rem;
+    
+        /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho */
+        background-image: url('../../logoOpaco2.png');
+        background-position: 103px 43px;
+        background-repeat: no-repeat;
+        background-size: 110px 110px;
+        
+        
+           
+    }
+
+
+    .bg-img img {
+
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        margin-top: 9px;
+        margin-left: 45px;
+        margin-bottom: 0px;
+    
+    }
+}
+
+
+/*Esse media vai deixa a tela com 4 colunas caso ela for 1366px "Grande"*/
+@media screen and (min-width: 1920px) {
+    .pokemons {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    .pokemon {
+
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem; 
+        
+        color: rgb(255, 255, 255);
+        height: 10rem;
+    
+        /*Coloquei o logo da pokebola no funo e configurei sua posição/tamanho */
+        background-image: url('../../logoOpaco2.png');
+        background-position: 103px 43px;
+        background-repeat: no-repeat;
+        background-size: 110px 110px;
+        
+        
+           
+    }
+
+
+    .bg-img img {
+
+        max-width: 100%;
+        height: 100px ;
+        padding: 0px;
+        border-style: none;
+        margin-top: 9px;
+        margin-left: 45px;
+        margin-bottom: 0px;
+    
+    }
+}

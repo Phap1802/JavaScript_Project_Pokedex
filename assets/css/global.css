@@ -1,0 +1,46 @@
+/*o "*" no css joga o comadno para todos*/
+/*Colocanod fonte 'Roboto' para todo mundo od html*/
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+ 
+body{
+    background-color: #f6f8fc;
+
+}
+ 
+.content {
+    /*1rem medidida flexiva (redimensiona no browser)*/
+    justify-self: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    padding-bottom: 20rem;
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/*"midia quary" conjunto de css que vai ser aplicado de acordo com tamanho da tela*/
+/* Esse media vai deixa a tela configurada quando for 992px */
+@media screen and (min-width: 992px) {
+    .content {
+        display:flex;
+        max-width: 992px;
+        height: auto;
+        /*quando coloca auto em margem ela centraliza colocando margem no começo e no fim  */
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+
+
+
+
+
