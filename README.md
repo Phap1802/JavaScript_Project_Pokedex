@@ -1,4 +1,4 @@
-# DESAFGIO PROJETO POKEDEX - ATUALIZAÇÃO 
+# DESAFIO PROJETO POKEDEX - ATUALIZAÇÃO 
 
 ### Inicialmente fiz o projeto pokedex acompanhando as aulas com o professor Renan no curso de JS no modulo "Primeiras Paginas Interativas com JAva Script" do Bootcamp Potência Tech Angular Developer - Powered by ifood"
 
