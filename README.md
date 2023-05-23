@@ -2,7 +2,6 @@
 
 ### Inicialmente fiz o projeto pokedex acompanhando as aulas com o professor Renan no curso de JS no modulo "Primeiras Paginas Interativas com JAva Script" do Bootcamp Potência Tech Angular Developer - Powered by ifood"
 
-### Com isso apenas fiz o fork no repositorio dele mas como ja tinha os meus arquivos com a pokedex feita, apenas decidi clonar esse meu codigo ja feito no meu proprio repositorio local, com um repositorio proprio para este desafio. 
 
 ### Neste ReadME comento sobre as mudanças solicitada no desafio e sobre as mudanças pessoais que fiz. 
 
@@ -51,6 +50,6 @@
 
 ### Agradeço ao professor Renan por impor esse desafio pois com ele consegui absover mais sobre o conteudo de trabalha com o dinanismo  e requisições de uma API.  
 
-### Ainda pretendo fazer mais coisas nesse projeto como mudar a estetica de alguma forma, colocar filtros e etc, mas por hora para entregar o desafio fiz o necessario. levei em torno de 2 semanas para concluir o desafio mas por conta de tempo ja que trabalho e isso consome muito tempo do meu dia. 
+### Ainda pretendo fazer mais atualizações nesse projeto como mudar a estetica de alguma forma, colocar filtros e etc, mas por hora para entregar o desafio fiz o necessario. levei em torno de 2 semanas para concluir o desafio mas por conta de tempo ja que trabalho e isso consome muito tempo do meu dia. 
 
 
